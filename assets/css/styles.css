@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3eae3;
+}   
+
+main {
+    display: flex;
+    width: 500px;
+    height: 400px;
+}
+
+#image {
+    flex: 1;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 3rem;
+}
+
+#content {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #fff;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#title {
+    color: #9193a0;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;    
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#item-desc {
+    color: #9193a0;
+    font-size: 1.2rem;    
+    font-family: "Hanken Grotesk", sans-serif;
+    line-height: 2rem;
+}
+
+#price {
+    font-family: "Fraunces", serif;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#current-price{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3e7f67;
+}
+
+#old-price {
+    color: #9193a0;
+}
+
+button {
+    background-color: #3e7f67;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #1a4031;
+    cursor: pointer;
+}
+
+@media (max-width: 560px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: 550px;
+        margin: 2rem;
+    }
+
+    #image {
+        background-image: url(../images/image-product-mobile.jpg);
+        background-position: center;
+        flex: 1;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+
+    #content {
+        flex: 2;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+}
