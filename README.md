@@ -10,7 +10,7 @@ This is a solution to the [Product preview card component](https://www.frontendm
 
 ### Links
 
-- Live Site URL: [Product preview card component]()
+- Live Site URL: [Product preview card component](https://pylopes.github.io/product-preview-card-component/)
 
 ### Built with
 
